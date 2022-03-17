@@ -26,11 +26,11 @@ Só abrir sua http://localhost:3000 e curtir o projeto!
 - Web API
     - [] Deve atingir 100% de cobertura de código em testes.
     - [] Deve ter testes de integração validando todas as rotas da API.
-    - [] Deve entregar arquivos estáticos como Node.js Stream.
+    - [X] Deve entregar arquivos estáticos como Node.js Stream.
     - [] Deve entregar arquivos de música como Node.js Stream.
     - [] Dado um usuário desconectado não deve quebrar a API.
     - [] Mesmo que vários comandos sejam disparados ao mesmo tempo não deve quebrar a API.
-    - [] Caso ocorra um erro inesperado a API deve continuar funcionando.
+    - [X] Caso ocorra um erro inesperado a API deve continuar funcionando.
     - [] O projeto precisa ter portabilidade entre ambientes como Linux, Mac e Windows.
 
 - Web APP
