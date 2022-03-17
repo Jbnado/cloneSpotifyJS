@@ -1,0 +1,28 @@
+{
+  "name": "clonespotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",
+    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --no-cache --watchAll --runInBand",
+    "test:coverage": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --no-cache --coverage tests/unit --runInBand"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "keywords": [],
+  "author": "jb",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3"
+  }
+}
