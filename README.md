@@ -5,6 +5,10 @@ Projeto criado durante a sexta semana JS Expert do Erick Wendel.
 
 ## Abrindo o projeto
 Para rodar este projeto você precisa ter o node na versão 17.0.1, git e o npm.
+```bash
+npm install -g npm
+```
+[Download nodejs latest version](https://nodejs.org/en/)
 Agora é só clonar usando este comando:
 ```git
 git clone https://github.com/Jbnado/cloneSpotifyJS.git
@@ -21,7 +25,7 @@ npm run live-reload
 ```
 Só abrir sua http://localhost:3000 e curtir o projeto!
 
-## Sobre a estrutura de pastas
+## Goals
 
 - Web API
     - [] Deve atingir 100% de cobertura de código em testes.
@@ -45,16 +49,10 @@ Só abrir sua http://localhost:3000 e curtir o projeto!
 ### Server
 Esta pasta (server) contém nosso server, nossa API. Ela estará em node já a pasta public que é nosso front terá o js do browser. Por isso no jest.config.mjs temos duas configurações distintas.
 
-#### Arquitetura
+#### Project Architecture
 - Service conterá tudo que é regra de negócio ou processamento.
 - Controller intermediará a camada de apresentação e a camada de negócio.
 - Routes é a nossa camada de apresentação.
 - Server será responsável por criar o servidor mas não de instanciá-lo.
 - Index será responsável para instanciar nosso servidor e o expor para a WEB.
 - Config conterá tudo que é sensível e estático do projeto.
-
-#### Testes
-Para que eu pudesse rodar os testes no windows precisei instalar globalmente o win-node-env 
-```bash
-npm install -g win-node-env
-```
