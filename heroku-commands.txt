@@ -7,12 +7,12 @@ npx gitignore node
 
 git add . && git commit -m "my first deploy"
 
-heroku apps:create spotify-radio
+heroku apps:create jb-spotify-stream
 git remote -v
 heroku stack:set container
 git push heroku master
 heroku open
-heroku logs -t -a spotify-radio
+heroku logs -t -a jb-spotify-stream
 
 heroku apps:delete
 rm -rf .git
