@@ -1,5 +1,6 @@
 # Clone do Spotify em JS
 Projeto criado durante a sexta semana JS Expert do Erick Wendel.
+O projeto mais dificil para entrar na minha cabeça até agora!
 
 <img src="./print/demo.png" />
 
@@ -28,23 +29,23 @@ Só abrir sua http://localhost:3000 e curtir o projeto!
 ## Goals
 
 - Web API
-    - [] Deve atingir 100% de cobertura de código em testes.
-    - [] Deve ter testes de integração validando todas as rotas da API.
+    - [X] Deve atingir 100% de cobertura de código em testes.
+    - [X] Deve ter testes de integração validando todas as rotas da API.
     - [X] Deve entregar arquivos estáticos como Node.js Stream.
-    - [] Deve entregar arquivos de música como Node.js Stream.
-    - [] Dado um usuário desconectado não deve quebrar a API.
-    - [] Mesmo que vários comandos sejam disparados ao mesmo tempo não deve quebrar a API.
+    - [X] Deve entregar arquivos de música como Node.js Stream.
+    - [X] Dado um usuário desconectado não deve quebrar a API.
+    - [X] Mesmo que vários comandos sejam disparados ao mesmo tempo não deve quebrar a API.
     - [X] Caso ocorra um erro inesperado a API deve continuar funcionando.
-    - [] O projeto precisa ter portabilidade entre ambientes como Linux, Mac e Windows.
+    - [X] O projeto precisa ter portabilidade entre ambientes como Linux, Mac e Windows.
 
 - Web APP
     - Client
-        - [] Deve reproduzir a transmissão.
-        - [] Não deve pausar se algum efeito for adicionado.
+        - [X] Deve reproduzir a transmissão.
+        - [X] Não deve pausar se algum efeito for adicionado.
     - Controller
-        - [] Deve atingir 100 % de cobertura de codigo em testes.
-        - [] Deve poder iniciar ou parar uma transmissão.
-        - [] Deve enviar comandos para adicionar áudio e efeitos à uma transmissão.
+        - [X] Deve atingir 100 % de cobertura de codigo em testes.
+        - [X] Deve poder iniciar ou parar uma transmissão.
+        - [X] Deve enviar comandos para adicionar áudio e efeitos à uma transmissão.
 
 ### Server
 Esta pasta (server) contém nosso server, nossa API. Ela estará em node já a pasta public que é nosso front terá o js do browser. Por isso no jest.config.mjs temos duas configurações distintas.
