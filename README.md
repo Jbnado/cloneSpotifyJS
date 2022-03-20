@@ -1,8 +1,19 @@
 # Clone do Spotify em JS
 Projeto criado durante a sexta semana JS Expert do Erick Wendel.
 O projeto mais dificil para entrar na minha cabeça até agora!
+Não coloquei os dois áudios do desafio pois como eu disse, o projeto queimou meus neurônios!
 
-<img src="./print/demo.png" />
+Para ver o projeto no Heroku você precisa abrir 2 abas:
+- https://jb-spotify-stream.herokuapp.com/home
+
+- https://jb-spotify-stream.herokuapp.com/controller
+
+No controller você precisa iniciar a stream, aí sim dar play e brincar.
+
+![image](https://user-images.githubusercontent.com/73846881/159184121-9d728ba8-2caa-4734-a81f-91ce56ba46e2.png)
+
+![image](https://user-images.githubusercontent.com/73846881/159184132-f33fa545-0331-4af8-8053-380a170cb9e5.png)
+
 
 ## Abrindo o projeto
 Para rodar este projeto você precisa ter o node na versão 17.0.1, git e o npm.
