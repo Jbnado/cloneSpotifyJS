@@ -1,4 +1,4 @@
-const defaulConfig = {
+const defaultConfig = {
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   coverageReporters: [
@@ -23,17 +23,16 @@ const defaulConfig = {
 }
 
 export default {
-  projects: [
-    {
-      ...defaulConfig,
+  projects: [{
+      ...defaultConfig,
       testEnvironment: "node",
       displayName: "backend",
       collectCoverageFrom: [
         "server/",
-        "!server/index.js"
+        "!server/index.js",
       ],
       transformIgnorePatterns: [
-        ...defaulConfig.transformIgnorePatterns,
+        ...defaultConfig.transformIgnorePatterns,
         "public"
       ],
       testMatch: [
@@ -41,19 +40,19 @@ export default {
       ]
     },
     {
-      ...defaulConfig,
+      ...defaultConfig,
       testEnvironment: "jsdom",
       displayName: "frontend",
       collectCoverageFrom: [
         "public/",
       ],
       transformIgnorePatterns: [
-        ...defaulConfig.transformIgnorePatterns,
+        ...defaultConfig.transformIgnorePatterns,
         "server"
       ],
       testMatch: [
         "**/tests/**/public/**/*.test.js"
       ]
-    }
+    },
   ]
 }

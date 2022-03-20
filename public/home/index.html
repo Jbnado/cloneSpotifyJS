@@ -8,7 +8,7 @@
   <title>Spotify Radio - SemanaJSExpert 6.0</title>
   <link rel="stylesheet" href="./home/css/reset.css" />
   <link rel="stylesheet" href="./home/css/styles.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="./home/assets/favicon.ico" />
+  <link rel="shortcut icon" type="image/png" href="./home/assets/spotify-favicon.png" />
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
@@ -51,8 +51,8 @@
           <i class="fas fa-chevron-right container__section__arrow hide"></i>
         </div>
         <div class="container__section__user">
-          <img src="https://www.github.com/Jbnado.png" alt="user" />
-          João Bernardo
+          <img src="./home/assets/user-eg.jpg" alt="user" />
+          Erick Wendel
         </div>
       </div>
 
@@ -141,13 +141,13 @@
       </div>
       <div>
         <p>Node.js audio processing</p>
-        <p>João Bernardo</p>
+        <p>Erick Wendel</p>
       </div>
       <i class="fas fa-heart hide"></i>
     </div>
 
     <div class="audio-player">
-      <audio id="audio" preload="none" controls autoplay src="./home/../home/../home/audio/songs/conversation.mp3"></audio>
+      <audio id="audio" preload="none" controls autoplay></audio>
 
       <div class="player-controls">
         <div class="player__actions">
@@ -170,9 +170,15 @@
   </div>
   <div class="device-bar hide">
     <i class="fas fa-volume-up"></i>
-    <p>Listening on JBJ</p>
+    <p>Listening on Erick Wendel</p>
   </div>
   <script src="./home/js/animation.js"></script>
+  <script>
+    //  bypass prevent cache
+    window.onload = () => {
+      document.getElementById('audio').src = '/stream?id=' + Date.now()
+    }
+  </script>
 </body>
 
 </html>

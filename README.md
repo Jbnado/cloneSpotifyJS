@@ -13,10 +13,10 @@ Agora é só clonar usando este comando:
 ```git
 git clone https://github.com/Jbnado/cloneSpotifyJS.git
 ```
-Após clonar entre na pasta e dê um npm install:
+Após clonar entre na pasta e dê um npm ci --silent:
 ```bash
  cd .\cloneSpotifyJS\
- npm i
+ npm ci --silent
 ```
 Para poder navergar usando o vsCode e em seguida rodar o projeto em sua localhost use estes comandos:
 ```bash
